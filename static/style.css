@@ -1,0 +1,92 @@
+
+.bg-image{
+    background-image: url('https://media.istockphoto.com/id/970774142/vector/studio-room-gray-background-with-soft-lighting.jpg?s=612x612&w=0&k=20&c=6dumRp6H3xFyUxExOiYZJW03AdO6zk10umZNCOqYi_E=');
+    min-height: 100vh;
+}
+
+.nav_bg {
+    background-image: linear-gradient(to right,rgb(236, 222, 224),rgb(170, 132, 138));
+}
+
+.nav_align {
+    text-align: left;
+} 
+
+.nav_style{
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+.nav_padding{
+    padding: 5px;
+}
+
+.container_bg{
+    background-color: white;
+    min-height: 90vh;
+    box-shadow: 0px 8px 8px -4px rgb(43, 37, 37);
+}
+
+.formspec{
+    width: 50vw;
+}
+
+
+.head{
+    color: green;
+    font-style: "Roboto";
+    font-size: 20px;
+}
+
+.cancelbtn {
+    background-color: white;
+    border-width: 0px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.submitbtn {
+    background-color: rgb(221, 81, 81);
+    border-width: 0px;
+    border-radius: 3px;
+    width: 80px;
+    color: white;
+}
+
+.emp_count{
+    color: red;
+    border-width: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40%;
+    background-color: rgb(184, 168, 146);
+    
+}
+
+.emplist_container{
+    background-color: white;
+    min-height: 70vh;
+    
+
+}
+
+.emplist_headbar{
+    background-color: rgb(184, 168, 146);
+    border-width: 2px;
+    border-color: rgb(125, 41, 128);
+    border-style: solid;
+}
+
+.emplist_content{
+    background-color: transparent;
+    border-width: 2px;
+    border-color: rgb(125, 41, 128);
+    border-style: solid; 
+}
+
+.input-size{
+    height: 30px;
+}

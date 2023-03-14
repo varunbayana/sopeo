@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = "bg-image d-flex flex-column justify-content-center">
+    <div class = "container emplist_container">
+        <div class="table-responsive">
+            <table class="table">
+            <h1 class = "head mt-3 ml-3">Employee <span class = "emp_count">{{emplist|length}}</span></h1>    
+            <thead>
+                <tr class = "emplist_headbar">
+                    <th>EmpId</th>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>DOJ</th>
+                    <th>Department</th>
+                    <th>Post</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th>Zipcode</th>
+                    <th>State</th>
+                    <th>Active</th>
+                    <th>Leave_count</th>
+                    <th>On_leave</th>
+                    <th>edit</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for emp in emplist%}
+                <tr class = "emplist_content ml-3">
+                    <th scope = "row">{{emp.EmpId}}</th>
+                    <td>{{emp.Name}}</td>
+                    <td>{{emp.DOB}}</td>
+                    <td>{{emp.DOJ}}</td>
+                    <td>{{emp.Department}}</td>
+                    <td>{{emp.Post}}</td>
+                    <td>{{emp.Address}}</td>
+                    <td>{{emp.City}}</td>
+                    <td>{{emp.Country}}</td>
+                    <td>{{emp.Zipcode}}</td>
+                    <td>{{emp.State}}</td>
+                    <td>{{emp.Active}}</td>
+                    <td>{{emp.Leave_count}}</td>
+                    <td>{{emp.On_leave}}</td>
+                    <td>
+                        <a class = "btn btn-sm btn-info" href="{% url 'edit' emp.EmpId%}">Update</a>
+                    </td> 
+                    
+                </tr>
+                {% endfor %}
+                
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = "bg-image d-flex flex-row justify-content-center">
+    <form  method = "POST" class = "formspec d-flex flex-column justify-content-center needs-validation" novalidate>
+        {% csrf_token %}
+        <div class = "bg-white container">
+            <div class = "row">
+                <div class = "col-12">
+                    <h1 class = "mb-3 mt-2 head">Edit Employee</h1>
+                </div>
+                <div class = "col-6">  
+                    <label for="{{form.Name.id_for_label}}">Name</label>
+                    {{form.Name}}
+                </div>
+                <div class = "col-6">  
+                    <label for="{{form.DOB.id_for_label}}">DOB</label>
+                    {{form.DOB}}
+                </div>
+                <div class = "col-6">  
+                    <label for="{{form.DOJ.id_for_label}}">DOJ</label>
+                    {{form.DOJ}}
+                </div>
+                <div class = "col-6">  
+                    <label for="{{form.Department.id_for_label}}">Department</label>
+                    {{form.Department}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.Post.id_for_label}}">Post</label>
+                    {{form.Post}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.address.id_for_label}}">Address</label>
+                    {{form.Address}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.City.id_for_label}}">City</label>
+                    {{form.City}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.Country.id_for_label}}">Country</label>
+                    {{form.Country}}"
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.Zipcode.id_for_label}}">Zipcode</label>
+                    {{form.Zipcode}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.State.id_for_label}}">State</label>
+                    {{form.State}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.Active.id_for_label}}">Active</label>
+                    {{form.Active}}
+                </div>
+                <div class = "col-6">
+                    <label for="{{form.Leave_count.id_for_label}}">No of leave days</label>
+                    {{form.Leave_count}}
+                </div>
+                <div class = "col-6">  
+                    <label for="{{form.On_leave.id_for_label}}">On_leave</label>
+                    {{form.On_leave}}
+                </div>
+            </div>
+            <div class = "mt-3 mb-3 d-flex flex-row justify-content-end">
+                <button class = "cancelbtn">Cancel</button>
+                <button class = "submitbtn">Submit</button>
+                
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content%}
+
+
